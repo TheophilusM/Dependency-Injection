@@ -8,7 +8,12 @@
     <artifactId>DependencyInjection</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--adding a dependency-->
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.18</version>
+        </dependency>
     </dependencies>
 </project>
