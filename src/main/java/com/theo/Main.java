@@ -19,6 +19,7 @@ public class Main {
         Student student = (Student) applicationContext.getBean("student"); // using the id and casting
         System.out.println("For id ref and casting:");
         student.thePerson();
+        System.out.println("University: " + student.getUniversity());
 
         // using implementations
         Human human = applicationContext.getBean(Student.class);
