@@ -89,7 +89,7 @@
 ## Spring Framework
 * Inversion of Control
 * Dependency injection
-	- to easily use objects of other classes
+	- _to easily use objects of other classes_
 	- replaces class instantiation thus tight coupling
 	- introduces loose coupling good for unit testing of each component
 	- spring references all classes
@@ -102,5 +102,10 @@
 * Aspect Oriented Programming
 * MVC allowing creation web applications
 * Data libraries - relational or non-relational
-* 
+* Spring Bean scopes
+    - _singleton_ - default
+    - _prototype_
+    - _request_
+    - _session_
+    - _global session_
 * 

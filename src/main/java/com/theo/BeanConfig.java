@@ -13,4 +13,9 @@ public class BeanConfig {
     public Profile profile(){
         return new Profile();
     }
+
+    @Bean
+    public Student student(){
+        return new Student("UZ");
+    }
 }

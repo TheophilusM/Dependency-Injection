@@ -49,6 +49,11 @@ public class Main {
 
         Profile profile = applicationContext.getBean(Profile.class); // using the class
         profile.thePerson();
+        System.out.println();
+
+        Student student = applicationContext.getBean(Student.class); // using the class
+        student.setCourseName("HETT");
+        System.out.println(student.getCourseName());
 
     }
 }
