@@ -1,6 +1,7 @@
 package com.theo;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -31,11 +32,17 @@ public class Main {
         System.out.println("For implementation:");
         human.thePerson();
         System.out.println();
-
         */
 
+        /*
         ///////////////////// using annotations ////////////////////
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        Work work = applicationContext.getBean(Work.class); // using the class
+        work.thePerson();
+         */
+
+        ///////////////////// using java configurations ////////////////////
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
         Work work = applicationContext.getBean(Work.class); // using the class
         work.thePerson();
     }
