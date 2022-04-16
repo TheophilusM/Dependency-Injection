@@ -6,5 +6,6 @@
 
     <!-- unique bean definitions here -->
     <bean id="profile" class="com.theo.Profile"/>
+    <bean id="student" class="com.theo.Student"/>
 
 </beans>
