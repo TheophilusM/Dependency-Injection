@@ -1,4 +1,4 @@
-### Spring Framework
+## Spring Framework
 * Inversion of Control
 * Dependency injection
 	- _to easily use objects of other classes_
@@ -12,6 +12,13 @@
 		- java configurations
 		- setter based
 * Aspect Oriented Programming
+    - methodology for creating applications
+    - cross-cutting consents
+        - logging request
+        - handling payments
+        - authenticating user
+        - e.t.c,
+    - separating cross-cutting consents from business logic
 * MVC allowing creation web applications
 * Data libraries - relational or non-relational
 * Spring Bean scopes
