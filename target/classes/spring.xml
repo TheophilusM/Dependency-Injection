@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- unique bean definitions here -->
-    <bean id="profile" class="com.theo.Profile"/>
-    <bean id="student" class="com.theo.Student">
-        <property name="university" value="University of Zimbabwe"/>
-    </bean>
+    <!--
+        unique bean definitions here -->
+<!--    <bean id="profile" class="com.theo.Profile"/>-->
+<!--    <bean id="student" class="com.theo.Student">-->
+<!--        &lt;!&ndash; For constructors&ndash;&gt;-->
+<!--        <constructor-arg value="UZ"/>-->
+<!--        &lt;!&ndash; For a variable&ndash;&gt;-->
+<!--        <property name="university" value="University of Zimbabwe"/>-->
+<!--        &lt;!&ndash; For an object&ndash;&gt;-->
+<!--        <property name="profile" ref="profile"/>-->
+<!--    </bean>
+    -->
+    
+    <!--annotations-->
+    <context:component-scan base-package="com.theo"></context:component-scan>
+    
 
 </beans>

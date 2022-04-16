@@ -4,6 +4,11 @@ public class Student implements Human {
     private String university;
     private Profile profile;
 
+    public Student(String university) {
+        this.setUniversity(university);
+    }
+
+
     @Override
     public void thePerson() {
         System.out.println("Finished my studies");
