@@ -7,24 +7,28 @@ public class Main {
     public static void main(String[] args) {
         // object instantiation
         Profile profile = new Profile();
-        System.out.println("For object instantiation");
+        System.out.println("For object instantiation:");
         profile.thePerson();
+        System.out.println();
 
         // replacement of object instantiation
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
         Profile profileObj = applicationContext.getBean(Profile.class); // using the class
         System.out.println("For class ref:");
         profileObj.thePerson();
+        System.out.println();
 
         Student student = (Student) applicationContext.getBean("student"); // using the id and casting
         System.out.println("For id ref and casting:");
         student.thePerson();
         System.out.println("University: " + student.getUniversity());
+        System.out.println();
 
         // using implementations
         Human human = applicationContext.getBean(Student.class);
         System.out.println("For implementation:");
         human.thePerson();
+        System.out.println();
 
     }
 }

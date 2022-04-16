@@ -7,7 +7,10 @@
     <!-- unique bean definitions here -->
     <bean id="profile" class="com.theo.Profile"/>
     <bean id="student" class="com.theo.Student">
+        <!-- For a variable-->
         <property name="university" value="University of Zimbabwe"/>
+        <!-- For an object-->
+        <property name="profile" ref="profile"/>
     </bean>
 
 </beans>
