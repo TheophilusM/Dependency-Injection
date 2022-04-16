@@ -45,5 +45,10 @@ public class Main {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
         Work work = applicationContext.getBean(Work.class); // using the class
         work.thePerson();
+        System.out.println();
+
+        Profile profile = applicationContext.getBean(Profile.class); // using the class
+        profile.thePerson();
+
     }
 }

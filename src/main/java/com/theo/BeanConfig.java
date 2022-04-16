@@ -1,5 +1,6 @@
 package com.theo;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -7,4 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.theo")
 public class BeanConfig {
 
+    // to define a bean
+    @Bean
+    public Profile profile(){
+        return new Profile();
+    }
 }
