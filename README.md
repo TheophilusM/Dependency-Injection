@@ -1,99 +1,11 @@
-### **Software**
-* Java 11
-* Maven 3+
-* IntelliJ IDEA Ultimate
-* MySQL Server and Workbench
-
-### **Why Spring Boot**
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-	
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-	
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-## Spring Framework
+### Spring Framework
 * Inversion of Control
 * Dependency injection
 	- _to easily use objects of other classes_
-	- replaces class instantiation thus tight coupling
-	- introduces loose coupling good for unit testing of each component
-	- spring references all classes
-	- Methods
+	- _replaces class instantiation thus tight coupling_
+	- _introduces loose coupling good for unit testing of each component_
+	- _spring references all classes_
+	- **Methods**
 		- annotations
 		- xml configurations
 		- constructor based
@@ -108,4 +20,11 @@
     - _request_
     - _session_
     - _global session_
-* 
+* Spring Bean Lifecycle
+    - _Definition of a bean_
+    - _Bean instantiation or creation_
+    - _Population of the properties_
+    - _Post initialization - interfaces etc._
+    - _Dependency injections_
+    - _Pre-destroy of the bean_
+    - _Bean destroyed from the JVM_
